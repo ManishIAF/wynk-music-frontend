@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.23797bd8.css",
+    "main.js": "/static/js/main.81aa597a.js",
+    "static/media/whatsapp.png": "/static/media/whatsapp.7f02d15e4c8e6060c3f6.png",
+    "index.html": "/index.html",
+    "main.23797bd8.css.map": "/static/css/main.23797bd8.css.map",
+    "main.81aa597a.js.map": "/static/js/main.81aa597a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23797bd8.css",
+    "static/js/main.81aa597a.js"
+  ]
+}

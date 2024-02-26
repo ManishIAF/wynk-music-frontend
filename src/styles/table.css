@@ -1,0 +1,113 @@
+.underline:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.hoverable-row:hover {
+    border: 1px solid gray;
+}
+
+.container {
+    display: grid;
+    width: 100%;
+    /* padding: 20px; */
+    grid-template-columns: 1fr;
+    grid-gap: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 0px;
+  }
+
+  th, td {
+    padding: 8px;
+    /* border-spacing: 0 5px; */
+    color: rgb(92, 91, 91);
+    font-size: 13px;
+    text-align: left;
+    padding-bottom: 20px;
+  }
+
+  tr td {
+    border: 1px solid transparent;
+    color: gray;
+    transition: all ease 0.3s;
+    font-size:13px;
+    padding: 5px; 
+  }
+
+  tr td:first-child {
+    border-right: 0px;
+    color: #eee;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+  }
+
+  tr td p:hover {
+    color: #eee;
+  }
+
+
+  tr td:last-child {
+    border-left: 0px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+
+  .download{
+    /* float: right; */
+    color: #eee;
+    /* margin-top: 15px; */
+  }
+
+  .more{
+    /* float: left; */
+    color: #eee;
+  }
+
+  tr td:not(:first-child, :last-child) {
+    border-left: 0px;
+    border-right: 0px;
+  }
+
+  tr:hover td:first-child {
+    border-color: rgb(92, 91, 91);
+    border-right: 0px;
+  }
+
+  tr:hover td:last-child {
+    border-color: rgb(92, 91, 91);
+    border-left: 0px;
+  }
+
+  tr:hover td:not(:first-child, :last-child) {
+    border-color: rgb(92, 91, 91);
+    border-left: 0px;
+    border-right: 0px;
+  }
+
+.QueueTableBorder {
+  border: 0.09rem solid transparent;
+  border-radius: 7px;
+}
+
+.QueueTableBorder:hover{
+  background-color: transparent;
+  border-color:rgb(92, 91, 91);
+  border-width: 0.05rem;
+  border-radius: 7px;
+}
+
+.arthover{
+  color: gray;
+}
+
+.arthover:hover{
+  color: #eee;
+}
+
+.buttonHover:hover{
+  background-color: blue;
+}

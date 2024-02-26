@@ -1,13 +1,137 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  width: 100%;
+  background: #0B0F14;
+  font-family: Roboto,sans-serif;
+  font-weight: 400;
+  line-height: inherit;
+  color: #eee;  
 }
+
+.bottompage{
+  display: flex;
+  width:100%;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+  left: 0;
+  right: 0;
+  border: none;
+  z-index: 900;
+  height: 4.5rem;
+  background-color: rgba(33,37,45);
+  /* background-color: #282c34;*/
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);   
+} 
+
+.volumeslider{
+  position:fixed;
+  cursor: pointer;
+  bottom: 1.3rem;
+}
+
+audio,
+source {
+  all: unset;
+}
+
+progress {
+  position: fixed;
+  cursor: pointer;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  background-color: #eee;
+  bottom: 4.5rem;
+  appearance: none;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+}
+
+progress::before {
+  content: '';
+  display: none;
+  width: 12px;
+  height: 12px;
+  background-image: linear-gradient(180deg, #ff8d76 0, #ff0c55);
+  border-radius: 50%;
+  position: absolute;
+  top: -4px;
+  right: var(--dot-position, calc(100% - 8px));
+  transition: right 0.3s ease; /* Smooth transition for dot movement */
+}
+progress:hover {
+  height: 4px;
+}
+progress:hover::before {
+  display: block;
+}
+progress::-webkit-progress-value {
+  background-image: linear-gradient(180deg, #ff8d76 0, #ff0c55);
+  border-radius: 50%;
+}
+
+div.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  /* padding: 10px; */
+}
+
+div.scroll-container img {
+  /* display: inline-block; */
+  width: 100px;
+  padding: 5px;
+}
+
+.hoverEffect{
+  width:55px;
+  padding-left: 12px;
+  height:20px;
+  color: red;
+  cursor: pointer;
+}
+
+.hoverEffect:hover{
+  border-radius: 10px;
+  background-color: red;
+  color: white;
+
+}
+
+.menuItem:hover{
+  --tw-bg-opacity: 1;
+  background-color:rgba(12,15,18,var(--tw-bg-opacity));
+  cursor: pointer;
+}
+.headerpointer:hover{
+  cursor:pointer;
+  color:gray ;
+}
+
+.hideScrollBar::-webkit-scrollbar{
+  scrollbar-width: none;
+  display: none;
+  -ms-overflow-style: none;
+}
+
+.FooterHeader{
+  cursor: pointer;
+  --tw-text-opacity: 1;
+  color: rgba(183,192,196,var(--tw-text-opacity));
+}
+
+.FooterHeader:hover{
+  color: white;
+}
+ 

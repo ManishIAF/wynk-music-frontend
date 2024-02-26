@@ -1,0 +1,50 @@
+.navbar {
+  position: sticky;
+  z-index: 999;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline-block;
+}
+
+.navbar li p {
+  --tw-text-opacity: 1;
+  color: rgba(163,167,174,var(--tw-text-opacity));
+  display: block;
+  padding: 0 16px;
+  text-decoration: none;
+}
+
+/* Style the dropdown menu */
+.navbar ul ul {
+  position: absolute;
+  margin:0;
+  /* top: 100%; */
+  padding-top: 20px;
+  width: 170px;
+  display: none;
+  background-image: linear-gradient(180deg,#1c1c1c,#1c1b1b 42.69%,#161616);
+  border-radius: 10px;
+}
+
+.navbar ul ul li {
+  display: block;
+}
+
+.navbar li:hover ul {
+  display: block;
+}
+
+/* Change the background color of dropdown links on hover */
+.navbar ul ul li p:hover {
+  text-decoration: underline;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
